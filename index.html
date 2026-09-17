@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeremy's Dog | $SCOUT on Arc</title>
+  <meta name="description" content="Jeremy's Dog. Symbol Scout. The dark, shaggy house dog with the white chest, living on Arc Chain." />
+  <meta property="og:title" content="Jeremy's Dog | $SCOUT" />
+  <meta property="og:description" content="Scout is Jeremy's dog. A dark, shaggy coat. A white chest. An Arc Chain memecoin." />
+  <meta property="og:image" content="assets/logo.jpg" />
+  <link rel="icon" href="assets/logo.jpg" type="image/jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,420;0,9..144,600;0,9..144,720;1,9..144,480;1,9..144,700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true">
+    <div class="wash wash-a"></div>
+    <div class="wash wash-b"></div>
+    <div class="wash wash-c"></div>
+    <div class="paw-field"></div>
+    <div class="grain"></div>
+    <div class="spot" id="spot"></div>
+    <canvas id="drift"></canvas>
+  </div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#hero">
+      <img src="assets/logo.jpg" alt="Scout, Jeremy's dog" />
+      <span>
+        <strong>Jeremy's Dog</strong>
+        <small>$SCOUT</small>
+      </span>
+    </a>
+    <button class="menu" type="button" id="menu" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="links" id="links">
+      <a href="#about">About</a>
+      <a href="#howtobuy">How to buy</a>
+      <a href="#chart">Chart</a>
+      <a href="#joinus">Join us</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="icon-link" data-link="x" href="https://x.com/ScoutCircleDog" target="_blank" rel="noopener noreferrer" aria-label="Scout on X">
+        <img src="assets/icons/x.svg" alt="" />
+      </a>
+      <a class="icon-link" data-link="dex" href="https://dexscreener.com/arc" target="_blank" rel="noopener noreferrer" aria-label="DexScreener on Arc">
+        <img src="assets/icons/dexscreener.svg" alt="" />
+      </a>
+      <a class="buy" data-link="uni" href="https://app.uniswap.org/swap?chain=arc" target="_blank" rel="noopener noreferrer">
+        <img src="assets/icons/uniswap.svg" alt="" />
+        Buy Scout
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <p class="spine">Arc Chain memecoin</p>
+      <div class="hero-copy">
+        <p class="eyebrow">House name Jeremy's Dog</p>
+        <h1>
+          <span class="line">Jeremy's</span>
+          <span class="line italic">Dog</span>
+        </h1>
+        <p class="lede">
+          The dark, shaggy dog with the white chest is Scout.
+          Jeremy's dog. Sitting for the portrait. Living on Arc.
+        </p>
+        <div class="hero-meta">
+          <span class="chip">Name Jeremy's Dog</span>
+          <span class="chip">Symbol Scout</span>
+          <span class="chip">Chain Arc</span>
+        </div>
+        <div class="hero-cta">
+          <a class="btn gold magnet" data-link="uni" href="https://app.uniswap.org/swap?chain=arc" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icons/uniswap.svg" alt="" />
+            Buy on Uniswap
+          </a>
+          <a class="btn ink magnet" data-link="dex" href="https://dexscreener.com/arc" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icons/dexscreener.svg" alt="" />
+            Arc chart
+          </a>
+        </div>
+        <button class="ca magnet" type="button" data-copy="" aria-label="Copy contract address">
+          <span>Arc contract</span>
+          <code data-ca>Contract pending on Arc</code>
+          <em class="ca-tip">Copy</em>
+        </button>
+      </div>
+
+      <div class="portrait">
+        <div class="orbit"></div>
+        <div class="orbit late"></div>
+        <div class="wisp w1"></div>
+        <div class="wisp w2"></div>
+        <div class="wisp w3"></div>
+        <figure class="medallion">
+          <img src="assets/logo.jpg" alt="Scout, a dark shaggy dog with a white chest" />
+        </figure>
+        <p class="portrait-cap">Scout</p>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="section-head reveal">
+        <p class="kicker">The kennel notes</p>
+        <h2>About Scout</h2>
+      </div>
+      <div class="about-grid">
+        <article class="dossier reveal">
+          <p>
+            Scout is Jeremy's dog. Not a mascot drawn from scratch. A real house
+            animal: ink-black coat, shaggy enough to hide a whole afternoon, and
+            a white chest that reads like a pressed collar.
+          </p>
+          <p>
+            This site is his Arc Chain memecoin. Name Jeremy's Dog. Symbol Scout.
+            The circle around him trades the way a good dog keeps a room:
+            quiet, loyal, a little stubborn about the couch.
+          </p>
+          <p>
+            The cream light, the gold wash, the paw marks in the wallpaper:
+            that is the parlor he already occupies. We just put a ticker on the
+            collar.
+          </p>
+        </article>
+        <aside class="facts reveal">
+          <dl>
+            <div>
+              <dt>Called</dt>
+              <dd>Scout</dd>
+            </div>
+            <div>
+              <dt>House name</dt>
+              <dd>Jeremy's Dog</dd>
+            </div>
+            <div>
+              <dt>Coat</dt>
+              <dd>Dark, shaggy, ink-black</dd>
+            </div>
+            <div>
+              <dt>Chest</dt>
+              <dd>White ruff, one stray whisker</dd>
+            </div>
+            <div>
+              <dt>Chain</dt>
+              <dd>Arc</dd>
+            </div>
+            <div>
+              <dt>Pair</dt>
+              <dd>Scout / USDC</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section id="howtobuy" class="howto">
+      <div class="section-head reveal">
+        <p class="kicker">The walk</p>
+        <h2>How to buy</h2>
+        <p class="lead">Four quiet steps on Arc. No other chain.</p>
+      </div>
+      <ol class="path">
+        <li class="step reveal">
+          <span class="pad">01</span>
+          <h3>Switch to Arc</h3>
+          <p>Open an EVM wallet and set the network to Arc before you touch a swap.</p>
+        </li>
+        <li class="step reveal">
+          <span class="pad">02</span>
+          <h3>Hold USDC</h3>
+          <p>Fund the wallet with USDC on Arc. That is the dollar Scout swaps against.</p>
+          <span class="mini">
+            <img src="assets/icons/usdc.svg" alt="" />
+            USDC on Arc
+          </span>
+        </li>
+        <li class="step reveal">
+          <span class="pad">03</span>
+          <h3>Swap on Uniswap</h3>
+          <p>Route USDC into Scout on Uniswap. Confirm the Arc contract before you sign.</p>
+          <a class="text-link" data-link="uni" href="https://app.uniswap.org/swap?chain=arc" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icons/uniswap.svg" alt="" />
+            app.uniswap.org
+          </a>
+        </li>
+        <li class="step reveal">
+          <span class="pad">04</span>
+          <h3>Read DexScreener</h3>
+          <p>Open the Arc pair only. If the chart is not on dexscreener.com/arc, walk away.</p>
+          <a class="text-link" data-link="dex" href="https://dexscreener.com/arc" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icons/dexscreener.svg" alt="" />
+            dexscreener.com/arc
+          </a>
+        </li>
+      </ol>
+    </section>
+
+    <section id="chart" class="chart">
+      <div class="section-head reveal">
+        <p class="kicker">The tape</p>
+        <h2>Arc chart</h2>
+        <a class="text-link" data-link="dex" href="https://dexscreener.com/arc" target="_blank" rel="noopener noreferrer">
+          <img src="assets/icons/dexscreener.svg" alt="" />
+          Open Scout on DexScreener
+        </a>
+      </div>
+      <div class="frame reveal">
+        <div class="frame-bar">
+          <span>DexScreener</span>
+          <span>Arc only</span>
+          <span>Scout / USDC</span>
+        </div>
+        <iframe
+          id="dex-frame"
+          title="Scout DexScreener chart on Arc"
+          src="https://dexscreener.com/arc?embed=1&theme=light&info=0"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+
+    <section id="joinus" class="join">
+      <div class="section-head reveal">
+        <p class="kicker">The circle</p>
+        <h2>Join us</h2>
+        <p class="lead">The cream field, the fur lettering, the dog on the right. That is Scout asking you in.</p>
+      </div>
+      <figure class="banner-wrap reveal">
+        <img src="assets/banner.png" alt="Scout banner with fur lettering on a cream field" />
+      </figure>
+      <div class="join-row reveal">
+        <a class="join-card magnet" data-link="x" href="https://x.com/ScoutCircleDog" target="_blank" rel="noopener noreferrer">
+          <img src="assets/icons/x.svg" alt="" />
+          <div>
+            <strong>Follow Scout</strong>
+            <span>x.com/ScoutCircleDog</span>
+          </div>
+        </a>
+        <a class="join-card magnet" data-link="dex" href="https://dexscreener.com/arc" target="_blank" rel="noopener noreferrer">
+          <img src="assets/icons/dexscreener.svg" alt="" />
+          <div>
+            <strong>Watch the Arc pair</strong>
+            <span>DexScreener chart</span>
+          </div>
+        </a>
+        <a class="join-card magnet" data-link="uni" href="https://app.uniswap.org/swap?chain=arc" target="_blank" rel="noopener noreferrer">
+          <img src="assets/icons/uniswap.svg" alt="" />
+          <div>
+            <strong>Take a seat</strong>
+            <span>Buy Scout on Uniswap</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <a class="brand" href="#hero">
+      <img src="assets/logo.jpg" alt="" />
+      <span>
+        <strong>Jeremy's Dog</strong>
+        <small>$SCOUT on Arc</small>
+      </span>
+    </a>
+    <p>Scout is Jeremy's dog. A memecoin on Arc Chain. Not financial advice.</p>
+    <div class="foot-links">
+      <a data-link="x" href="https://x.com/ScoutCircleDog" target="_blank" rel="noopener noreferrer">
+        <img src="assets/icons/x.svg" alt="" /> X
+      </a>
+      <a data-link="dex" href="https://dexscreener.com/arc" target="_blank" rel="noopener noreferrer">
+        <img src="assets/icons/dexscreener.svg" alt="" /> DexScreener
+      </a>
+      <a data-link="uni" href="https://app.uniswap.org/swap?chain=arc" target="_blank" rel="noopener noreferrer">
+        <img src="assets/icons/uniswap.svg" alt="" /> Uniswap
+      </a>
+      <a data-link="scan" href="https://explorer.arc.io" target="_blank" rel="noopener noreferrer">Explorer</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
