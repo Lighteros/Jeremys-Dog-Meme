@@ -2,7 +2,7 @@ const SITE = {
   name: "Jeremy's Dog",
   symbol: "Scout",
   chain: "arc",
-  ca: "0x9934db0C05f8184D527Eef336f2639a02CCf1698",
+  ca: "xxx",
   pair: "0x66ceaca66c20b5b04e7a1cc5ab1be0afb9375d093eea7956bf9c8df8b4592123",
   x: "https://x.com/ScoutCircleDog",
   explorer: "https://explorer.arc.io",
@@ -16,12 +16,16 @@ function dexUrl() {
   return SITE.pair ? `${SITE.dexBase}/${SITE.pair}` : SITE.dexBase;
 }
 
+function liveCa() {
+  return SITE.ca && SITE.ca !== "xxx" ? SITE.ca : "";
+}
+
 function uniUrl() {
-  return SITE.ca ? `${SITE.uniBase}&outputCurrency=${SITE.ca}` : SITE.uniBase;
+  return liveCa() ? `${SITE.uniBase}&outputCurrency=${SITE.ca}` : SITE.uniBase;
 }
 
 function scanUrl() {
-  return SITE.ca ? `${SITE.explorer}/address/${SITE.ca}` : SITE.explorer;
+  return liveCa() ? `${SITE.explorer}/address/${SITE.ca}` : SITE.explorer;
 }
 
 function wireLinks() {
